@@ -1,0 +1,26 @@
+.SideBar{
+     display: flex;
+     flex-direction: column;
+     justify-content: first baseline;
+     border-right:1px solid grey;
+     width: 16vw;
+     height: 45vh;
+}
+
+.item{
+     display: flex;
+     margin-block:20px;
+     justify-content: center;
+     align-items: center;
+}
+
+.item *{
+     margin: 4px;
+}
+@media only screen and (max-width: 700px) {
+     /* Styles for screens 600px wide or less */
+     .item >p {
+          display: none;
+     }
+ }
+ 

@@ -1,0 +1,68 @@
+/* ListFoodItem.css */
+.list-food-item {
+     padding: 20px;
+     min-width: 80vw;
+     /* margin: 10px auto; */
+     border-left:1px solid gray ;
+   }
+   
+   .list-food-item p {
+     font-size: 24px;
+     text-align: center;
+     margin-bottom: 20px;
+     font-weight: bold;
+   }
+   
+   .list-table {
+     display: flex; /* Hide headers on smaller screens */
+     justify-content: space-around;
+     padding: 8px 0;
+     border-bottom: 2px solid #ccc;
+   }
+
+
+   
+   .format {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+   }
+
+   .list-table>b{
+    margin-inline: 2px;
+   }
+   
+   .foodItem {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid #ccc;
+     padding: 10px 0;
+     margin: 10px 0;
+   }
+   
+   .foodItem img {
+     width: 60px;
+     height: 60px;
+     object-fit: cover;
+     border-radius: 10px;
+   }
+   
+  
+   
+   .food-action {
+     cursor: pointer;
+     color: red;
+   }
+
+   
+
+   @media (min-width:520) {
+     .list-table >b {
+          font-size: small;
+     }
+     .food-image{
+          height: 20px;
+          width: 20px;
+     }
+   }

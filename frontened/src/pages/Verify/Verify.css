@@ -1,0 +1,10 @@
+
+
+.spinner{
+     display: flex;
+     min-height: 56vh;
+     margin: auto;
+     min-width: 60vw;
+     justify-content: center;
+     align-items: center;
+}

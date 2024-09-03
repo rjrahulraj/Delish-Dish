@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    margin-top: 1vh;
+    padding: 0 2vw;
+}
+
+.navbar h2 {
+    color: rgb(177, 6, 6);
+    font-size: 32px;
+    font-family: 'Outfit', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+}
+
+.logo {
+    height: auto;
+    max-width: 150px;
+    position: relative;
+}
+
+.navbarMenu {
+    display: flex;
+    gap: 3vh;
+}
+
+.navbarMenu li {
+    margin: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    color: grey;
+    transition: color 0.3s;
+}
+
+.navbarMenu li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbarMenu li:hover,
+.navbarMenu li.active {
+    color: #ffa500;
+    border-bottom: 3px solid darkgray;
+    padding-bottom: 0.5vh;
+}
+
+.navbarRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbarRight button {
+    height: 6vh;
+    width: 15vh;
+    border-radius: 30px;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid transparent;
+}
+
+.navbarRight button:hover {
+    background-color: darkgray;
+    border-color: #d9d9d9;
+}
+
+.navbarSearchIcons {
+    position: relative;
+}
+
+.navbarRight .dot {
+    background-color: tomato;
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    top: -7px;
+    right: 3px;
+}
+
+
+
+.res_menu{
+     display: none;
+}
+
+
+
+@media (max-width: 1100px) {
+    .navbar h2 {
+        font-size: 28px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .navbarMenu {
+        gap: 2vh;
+    }
+
+    .navbarMenu li {
+        font-size: 1.25rem;
+    }
+
+    .res_menu{
+     display:  flex;
+     }
+
+    .navbarRight button {
+        height: 5vh;
+        width: 12vh;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+
+    .navbarRight img {
+        width: 3.5vh;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .navbar h2 {
+        font-size: 24px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .navbarMenu li {
+        font-size: 1rem;
+    }
+
+    .navbarRight {
+        gap: 14px;
+    }
+
+    .navbarRight button {
+        height: 5vh;
+        width: 10vh;
+        font-size: 0.8rem;
+    }
+
+    .navbarRight img {
+        width: 5vh;
+    }
+}
+
+@media (max-width: 700px) {
+     .navbarRight img {
+          width: 5vh;
+      }
+    .navbarMenu {
+        display: none;
+    }
+    .navbar h2 {
+        font-size: 20px;
+    }
+    .logo {
+        max-width: 80px;
+    }
+    .responsive_navbar{
+     position: fixed;
+     top: 20px;
+     left:0px;
+     width: 100vw;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     height: 50vh;
+     flex-direction: column;
+     margin-top: 10vh;
+     background-color: #f5f5dc;
+     transition: opacity 0.3s ease, transform 0.9s ease-in-out;
+    }
+    .responsive_navbar >li{
+          margin-block: auto;
+    }
+}

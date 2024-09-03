@@ -1,0 +1,101 @@
+
+   .container {
+     padding: 20px;
+     max-width: 1200px;
+     margin: 0 auto;
+     /* border: 2px solid black; */
+     width: 40vw;
+   }
+   
+   h1, h2 {
+     color: #ff6600; /* Orange color */
+   }
+   
+   .infoSection, .formSection {
+     padding: 10px;
+   }
+   
+   .infoSection {
+     flex: 1;
+   }
+   
+   .formSection {
+     flex: 1;
+     /* border: 2px solid red; */
+   }
+   
+   .content {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+   
+   @media(min-width: 600px) {
+     .content {
+       flex-direction: row;
+     }
+   }
+   .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    width: 70vw;
+  }
+
+
+   .form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   }
+   
+   .label {
+     margin-bottom: 5px;
+     color: #333;
+   }
+   
+   .input, .textarea {
+     padding: 8px;
+     font-size: 16px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+   }
+   
+   .input {
+     width: 100%;
+   }
+   
+   .textarea {
+     width: 100%;
+     min-height: 100px;
+   }
+   
+   .button {
+     padding: 10px;
+     font-size: 16px;
+     background-color: #ff6600; /* Orange color */
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+   }
+   
+   .button:hover {
+     background-color: #e65c00; /* Darker orange */
+   }
+   
+   .socialMedia {
+     margin-top: 20px;
+   }
+   
+   .link {
+     margin-right: 10px;
+     text-decoration: none;
+     color: #ff6600; /* Orange color */
+   }
+   
+   .link:hover {
+     text-decoration: underline;
+   }
+   

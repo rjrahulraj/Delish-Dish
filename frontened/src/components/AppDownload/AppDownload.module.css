@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+.appDownload{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.appDownload p{
+     margin: 4vh auto;
+     font-size: xx-large;
+}
+
+.AppDownloadLogo{
+     display: flex;
+}
+.AppDownloadLogo img{
+     width: 120px;
+     margin: auto 2vh;
+}
+
+.AppDownloadLogo img:hover{
+     transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px){
+     .appDownload p{
+          font-size: large;
+     }
+     .AppDownloadLogo img{
+          width: 100px;
+          margin: auto 1vh;
+     }
+     
+}

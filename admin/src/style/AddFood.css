@@ -1,0 +1,124 @@
+/* AddFood.css */
+
+.addFood {
+     max-width: 600px;
+     margin: 0 auto;
+     padding: 10px;
+     background-color: #f9f9f9;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     /* height: 20vh; Set the height to 40% of the viewport height */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
+   
+   .addFood div {
+     margin-bottom: 10px;
+   }
+   
+   .addFood label {
+     display: block;
+     margin-bottom: 4px;
+     font-weight: bold;
+   }
+   
+   .addFood input[type="text"],
+   .addFood input[type="file"],
+   .addFood textarea,
+   .addFood select {
+     width: 100%;
+     padding: 5px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     font-size: 16px;
+     box-sizing: border-box;
+   }
+   
+   .addFood .img {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   
+   .addFood .img img {
+     width: 100px; /* Fixed width */
+     height: 100px; /* Fixed height */
+     object-fit: cover; /* Ensures the image covers the entire container without distorting */
+     margin-top: 5px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+   }
+   
+   .addFood .ctgPrc {
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+   }
+   
+   .addFood .category,
+   .addFood .price {
+     flex: 1;
+   }
+   
+   .addFood button {
+     display: inline-block;
+     padding: 10px 10px;
+     background-color: #28a745;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+     width: 100%;
+   }
+   
+   .addFood button:hover {
+     background-color: #218838;
+   }
+   
+   /* Media Queries for Responsiveness */
+   
+   /* For tablets and below */
+   @media (max-width: 768px) {
+     .addFood {
+       padding: 15px;
+       height: auto; /* Adjust height for smaller screens */
+     }
+   
+     .addFood .ctgPrc {
+       flex-direction: column;
+     }
+   
+     .addFood .category,
+     .addFood .price {
+       width: 100%;
+     }
+   }
+   
+   /* For mobile devices */
+   @media (max-width: 480px) {
+     .addFood {
+       padding: 10px;
+       height: auto; /* Adjust height for smaller screens */
+     }
+   
+     .addFood button {
+       padding: 10px;
+       font-size: 14px;
+     }
+   
+     .addFood input[type="text"],
+     .addFood input[type="file"],
+     .addFood textarea,
+     .addFood select {
+       font-size: 14px;
+       padding: 8px;
+     }
+   
+     .addFood .img img {
+       width: 120px; /* Slightly smaller on mobile devices */
+       height: 120px;
+     }
+   }
+   
